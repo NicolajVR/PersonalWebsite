@@ -1,0 +1,59 @@
+.appbar {
+  &.MuiAppBar-root {
+    background-color: transparent;
+    padding: 5px;
+  }
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.center-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.link-list a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.8s ease, background-color 0.8s ease, padding 0.8s ease; /* Added padding transition */
+  padding: 5%; /* Added space around the links */
+  border-radius: 5px; /* Rounded corners for the links */
+  opacity: 0.8; /* Increased transparency */
+}
+.link-list a:hover {
+  color: #ffffff; /* Darker color on hover */
+  background-color: rgba(0, 0, 0, 1); /* Background color on hover with increased transparency */
+  padding: 12px; /* Adjusted padding on hover for a subtle change in size */
+  opacity: 1; /* Restored full transparency on hover */
+}
+.link-list a:active {
+  color: black; /* Darker color on hover */
+  background-color: rgb(255, 255, 255); /* Background color on hover with increased transparency */
+  padding: 12px; /* Adjusted padding on hover for a subtle change in size */
+  opacity: 1; /* Restored full transparency on hover */
+  transition: color 0.1s, background-color 0.1s;
+}
+
+
+/* Individual link items */
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.link-item {
+  font-weight:normal;
+  margin: 0 10px;
+}
